@@ -1,19 +1,7 @@
-<!doctype html>
-<html>
+{% extends "base.html" %} 
 
-  <head>
-    <title>manitobaTime</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  </head>
-
-  <body>
-  <div class="masthead">
-    <h1>manitobaTime</h1>
-    <img src="static/bisonBuddha.png" alt="bisonBuddha" width="300" height="300">
-  </div>
-
-
-
+{% block title %}Index{% endblock %}
+{% block content %}
     <p>My ethos on life is as follows — this will not be a cohesive piece.</p>
 
     <p>Do something. Do Anything. It will make you do more things.
@@ -34,7 +22,4 @@ Motivation comes from MOVING.</p>
     <p>A pen and a paper did everything we do now with computers. Computers can
     just do it faster the second time around. There is still no substitute for
     doing it the first time on paper. </p>
-
-  </body>
-
-</html>
+{% endblock %}
