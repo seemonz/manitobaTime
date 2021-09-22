@@ -1,19 +1,32 @@
 <!doctype html>
 <html>
 
-  <head>
-    <title> {% block title %}{% endblock %} manitobaTime</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  </head>
+    <head>
+        <title> {% block title %}{% endblock %} manitobaTime</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link src="{{ url_for('static', filename='main.js') }}">
+    </head>
 
-  <body>
-  <div class="masthead">
-    <h1>manitobaTime</h1>
-    <img src="static/bisonBuddha.png" alt="bisonBuddha" width="300" height="300">
-  </div>
+    <body>
 
-  <div id="content">{% block content %}{% endblock %}</div>
+        <div id="sidebar">
+            <div id="masthead">
+                <img src="static/bisonBuddha.png" alt="bisonBuddha" >
+            </div>
 
-  </body>
+            <h3 id="sidebar-title">manitobaTime</h3>
+            <a href="#" id="sidebar-button">Writings</a><br>
+            <a href="#" id="sidebar-button">Photos</a><br>
+            <a href="#" id="sidebar-button">Art</a><br>
+    
+        </div>
+    
+
+
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+
+    </body>
 
 </html>
