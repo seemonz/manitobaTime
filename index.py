@@ -10,6 +10,6 @@ def index():
 def writings():
 	return render_template('writings.html')
 
-@app.route("/aStringandaBalloon")
+@app.route("/writings/aStringandaBalloon")
 def aStringandaBalloon():
-	return render_template('aStringandaBalloon.html')
+	return render_template('writings/aStringandaBalloon.html')
