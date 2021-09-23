@@ -10,6 +10,8 @@ def index():
 def writings():
 	return render_template('writings.html')
 
+
+# TODO should make this into a set of writing objects in the future
 @app.route("/writings/aStringandaBalloon")
 def aStringandaBalloon():
 	return render_template('writings/aStringandaBalloon.html')
