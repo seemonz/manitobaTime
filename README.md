@@ -1,5 +1,5 @@
 ### manitobaTime
-A website for all things to do with mwah. 
+Personal website. Static content at the moment. Perhaps updating into perpituity. 
 
 ### Setup/Dev
 
