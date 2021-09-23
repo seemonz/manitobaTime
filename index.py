@@ -5,3 +5,11 @@ app = Flask(__name__)
 @app.route("/")
 def index():
 	return render_template('index.html')
+
+@app.route("/writings")
+def writings():
+	return render_template('writings.html')
+
+@app.route("/aStringandaBalloon")
+def aStringandaBalloon():
+	return render_template('aStringandaBalloon.html')
