@@ -10,6 +10,10 @@ def index():
 def writings():
 	return render_template('writings.html')
 
+@app.route("/photos")
+def photos():
+	return render_template('photos.html')
+
 
 
 
