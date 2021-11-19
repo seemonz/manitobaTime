@@ -1,32 +1,44 @@
 <!doctype html>
 <html>
 
-    <head>
-        <title> {% block title %}{% endblock %} manitobaTime</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        <link src="{{ url_for('static', filename='main.js') }}">
-    </head>
+  <head>
+    <title> {% block title %}{% endblock %} manitobaTime</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link src="{{ url_for('static', filename='main.js') }}">
+  </head>
 
-    <body>
+  <body>
 
+    <!-- sidebar for laptop--> 
+    <div id="sidebar">
+      <div id="masthead">
+          <a href="/"><img src="{{ url_for('static', filename='bisonBuddha.png') }}" alt="bisonBuddha" ></a>
+      </div>
 
-        <div id="sidebar">
-            <div id="masthead">
-                <a href="/"><img src="{{ url_for('static', filename='bisonBuddha.png') }}" alt="bisonBuddha" ></a>
-            </div>
+      <h3 id="sidebar-title">manitobaTime</h3>
+      <a href="/writings" id="sidebar-button">Writings</a><br>
+      <a href="/photos" id="sidebar-button">Photos</a><br>
+      <a href="#" id="sidebar-button">Art</a><br>
+    </div>    
 
-            <h3 id="sidebar-title">manitobaTime</h3>
-            <a href="/writings" id="sidebar-button">Writings</a><br>
-            <a href="/photos" id="sidebar-button">Photos</a><br>
-            <a href="#" id="sidebar-button">Art</a><br>
-    
-        </div>    
+    <!-- sidebar for phone --> 
+    <div id="phoneBar">
+      <div id="masthead">
+          <a href="/"><img src="{{ url_for('static', filename='bisonBuddha.png') }}" alt="bisonBuddha" ></a>
+      </div>
+      
+      <div id="barLinks">
+        <h1 id="sidebar-title"><a href="/">manitobaTime</a></h3>
+        <a href="/writings" id="sidebar-button">Writings</a>
+        <a href="/photos" id="sidebar-button">Photos</a> 
+        <a href="#" id="sidebar-button">Art</a>
+      </div>
+    </div>    
 
+    <div id="content">
+      {% block content %}{% endblock %}
+    </div>
 
-        <div id="content">
-            {% block content %}{% endblock %}
-        </div>
-
-    </body>
+  </body>
 
 </html>
