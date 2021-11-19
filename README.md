@@ -8,5 +8,5 @@ to run dev server:
 
 FLASK_APP=index.py FLASK_ENV=development flask run  *local only*
 
-FLASK_APP=index.py FLASK_ENV=development flask run --host=0.0.0.0 *serves up to whole network, nice for checking how it looks one phone*
+FLASK_APP=index.py FLASK_ENV=development flask run --host=0.0.0.0 *serves up to whole network, nice for checking how it looks on phone*
 
