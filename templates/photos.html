@@ -1,23 +1,22 @@
 {% extends "base.html" %}
 
-{% block title %}Writings{% endblock %} 
+{% block title %}Writings{% endblock %}
 
 {% block content %}
-    <p>Taking pictures of people and places I love brings a lot of joy. Simple as that.</p>
+    <p>Taking pictures. Simple as that.</p>
 
 
     <br>
 
-    <ul style="list-style-type: none">
-    <li><img src="{{ url_for('static', filename='sexySimon.jpeg') }}" width="80%" ><p>Sexual Simon.</p></li>
+    <img src="{{ url_for('static', filename='sexySimon.jpeg') }}" width="80%" ><p>Sexual Simon.</p><br>
 
-    <li> <img src="{{ url_for('static', filename='JRonTheHill.jpeg') }}" width="80%" ><p>The cutblock.</p> </li>
-    <li> <img src="{{ url_for('static', filename='JRGun.jpeg') }}" width="80%" ><p>My friend Junior.</p> </li>
-    <li> <img src="{{ url_for('static', filename='deadDeer.jpeg') }}" width="80%" ><p>A mule deer that I shot with the help of Junior.</p> </li>
+    <img src="{{ url_for('static', filename='JRonTheHill.jpeg') }}" width="80%" ><p>The cutblock.</p><br>
+    <img src="{{ url_for('static', filename='JRGun.jpeg') }}" width="80%" ><p>My friend Junior.</p><br>
+    <img src="{{ url_for('static', filename='deadDeer.jpeg') }}" width="80%" ><p>A mule deer that I shot with the help of Junior.</p><br>
 
-    <li> <img src="{{ url_for('static', filename='northBarriereLake.jpeg') }}" width="80%" ><p>A view of North Barriere Lake</p> </li>
-    <li> <img src="{{ url_for('static', filename='cucumberRobert.jpeg') }}" width="80%" ><p>Robert grew too many cucumbers.</p> </li>
-    <li> <img src="{{ url_for('static', filename='gavinSports.jpeg') }}" width="80%" ><p>My friend Gavin. He loves sports.</p> </li>
+    <img src="{{ url_for('static', filename='northBarriereLake.jpeg') }}" width="80%" ><p>A view of North Barriere Lake</p><br>
+    <img src="{{ url_for('static', filename='cucumberRobert.jpeg') }}" width="80%" ><p>Robert grew too many cucumbers.</p><br>
+    <img src="{{ url_for('static', filename='gavinSports.jpeg') }}" width="80%" ><p>My friend Gavin. He loves sports.</p><br>
 
-    </ul>
-{% endblock %} 
+
+{% endblock %}
