@@ -4,6 +4,9 @@
   <head>
     <title> {% block title %}{% endblock %} manitobaTime</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.6.0.min.js') }}"></script>
+
+    <!-- this js below doesnt work, use the one above.-->
     <link src="{{ url_for('static', filename='main.js') }}">
   </head>
 
