@@ -1,22 +1,65 @@
 {% extends "base.html" %}
 
-{% block title %}Writings{% endblock %}
+{% block title %}Photos{% endblock %}
 
 {% block content %}
+
+
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='photos.js') }}"></script> -->
+    <script type="text/javascript" src="{{ url_for('static', filename='imagesloaded.pkgd.js') }}"></script>
+
+    <script>
+      $(function()) {
+        var $grid = $('.grid').masonry({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          columnWidth: '.grid-sizer'
+        });
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {
+          $grid.masonry('layout');
+        });
+      });
+      </script>
+
+
+
     <p>Taking pictures. Simple as that.</p>
 
-
-    <br>
-
-    <img src="{{ url_for('static', filename='sexySimon.jpeg') }}" width="80%" ><p>Sexual Simon.</p><br>
-
-    <img src="{{ url_for('static', filename='JRonTheHill.jpeg') }}" width="80%" ><p>The cutblock.</p><br>
-    <img src="{{ url_for('static', filename='JRGun.jpeg') }}" width="80%" ><p>My friend Junior.</p><br>
-    <img src="{{ url_for('static', filename='deadDeer.jpeg') }}" width="80%" ><p>A mule deer that I shot with the help of Junior.</p><br>
-
-    <img src="{{ url_for('static', filename='northBarriereLake.jpeg') }}" width="80%" ><p>A view of North Barriere Lake</p><br>
-    <img src="{{ url_for('static', filename='cucumberRobert.jpeg') }}" width="80%" ><p>Robert grew too many cucumbers.</p><br>
-    <img src="{{ url_for('static', filename='gavinSports.jpeg') }}" width="80%" ><p>My friend Gavin. He loves sports.</p><br>
-
-
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="grid-item">
+        <img src="{{ url_for('static', filename='sexySimon.jpeg') }}">
+      </div>
+      <div class="grid-item-2">
+        <img src="{{ url_for('static', filename='JRonTheHill.jpeg') }}">
+      </div>
+      <div class="grid-item-2">
+        <img src="{{ url_for('static', filename='saskRoadElm.jpeg') }}">
+      </div>
+      <div class="grid-item">
+        <img src="{{ url_for('static', filename='JRGun.jpeg') }}">
+      </div>
+      <div class="grid-item">
+        <img src="{{ url_for('static', filename='saskGrass.jpeg') }}">
+      </div>
+      <div class="grid-item-2">
+        <img src="{{ url_for('static', filename='saskRoadElm.jpeg') }}">
+      </div>
+      <div class="grid-item">
+        <img src="{{ url_for('static', filename='northBarriereLake.jpeg') }}">
+      </div>
+      <div class="grid-item">
+        <img src="{{ url_for('static', filename='cucumberRobert.jpeg') }}">
+      </div>
+      <div class="grid-item">
+        <img src="{{ url_for('static', filename='stonewallMorning.jpeg') }}">
+      </div>
+      <div class="grid-item">
+        <img src="{{ url_for('static', filename='oliAndRock.jpeg') }}">
+      </div>
+      <div class="grid-item">
+        <img src="{{ url_for('static', filename='albertaSmoke.jpeg') }}">
+      </div>
+    </div>
 {% endblock %}

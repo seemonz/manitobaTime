@@ -12,6 +12,12 @@ img {
   max-width: 100%;
   border-radius: 5px;
 }
+img, #grid-item{
+  max-width: 100%;
+  border-radius: 0px;
+}
+
+
 
 
 a {
@@ -68,8 +74,9 @@ color: #222;
 }
 
 #content {
-  width: 80%;
+  width: 75%;
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* ----------- responsive design for phones ----------- */
@@ -137,4 +144,51 @@ color: #222;
     margin-left: 5%;
     margin-right: 5%;
   }
+}
+
+
+/* Masonry style for photos template */
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #fafafa;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid-sizer {
+  width: 50%;
+}
+
+.grid-item {
+  width: 50%;
+  float: left;
+}
+
+.grid-item-2 {
+  width: 50%;
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid-item-2 img {
+  display: block;
+  max-width: 100%;
 }

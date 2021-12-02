@@ -5,9 +5,8 @@
     <title> {% block title %}{% endblock %} manitobaTime</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.6.0.min.js') }}"></script>
-
-    <!-- this js below doesnt work, use the one above.-->
-    <link src="{{ url_for('static', filename='main.js') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='masonry.pkgd.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
   </head>
 
   <body>
@@ -18,6 +17,7 @@
       </div>
 
       <h3 id="sidebar-title">manitobaTime</h3>
+      <a href="/simonPelletier" id="sidebar-button">simonPelletier</a><br>
       <a href="/writings" id="sidebar-button">Writings</a><br>
       <a href="/photos" id="sidebar-button">Photos</a><br>
       <a href="#" id="sidebar-button">Art</a><br>
@@ -31,6 +31,7 @@
 
       <div id="barLinks">
         <h1 id="sidebar-title"><a href="/">manitobaTime</a></h3>
+        <a href="/simonPelletier" id="sidebar-button">simonPelletier</a>
         <a href="/writings" id="sidebar-button">Writings</a>
         <a href="/photos" id="sidebar-button">Photos</a>
         <a href="#" id="sidebar-button">Art</a>
