@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Art{% endblock %}
+
+{% block content %}
+
+<div class="grid">
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/sun.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/darkInlet.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/littleLake.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/doubleLandscape.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/saskRoad.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/river.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/aspenStand.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/mittCharacter.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/desert.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/treeReflection.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/thirdElm.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='art/treesSketched.jpeg') }}"></div>
+</div>
+
+
+{% endblock %}

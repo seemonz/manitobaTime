@@ -18,6 +18,10 @@ def writings():
 def photos():
 	return render_template('photos.html')
 
+@app.route("/art")
+def art():
+	return render_template('art.html')
+
 
 
 

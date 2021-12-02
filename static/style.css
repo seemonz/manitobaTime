@@ -178,6 +178,11 @@ body { font-family: sans-serif; }
   float: left;
 }
 
+.grid-item-full {
+  width: 100%;
+  float: left;
+}
+
 .grid-item-2 {
   width: 50%;
   float: left;

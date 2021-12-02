@@ -3,21 +3,132 @@
 {% block title %}simonPelletier{% endblock %}
 
 {% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='packery.pkgd.min.js') }}"></script>
+
+<script>
+  $('.grid').packery({
+    // options
+    itemSelector: '.grid-item',
+    gutter: 10
+  });
+</script>
+
+
 
 <h3> Building </h3>
 
-<p>I’ve had a collection of building experiences over the years.</p>
-
 <p>I built and lived in a yurt for one summer in Squamish, BC. Not a very fancy yurt.</p>
-<img src="{{ url_for('static', filename='simonPelletierPhotos/squamishYurt.jpeg') }}" width ="50%">
+<img src="{{ url_for('static', filename='simonPelletier/squamishYurt.jpeg') }}" width ="50%">
 
 <p>While I was living in this yurt I helped my friend build a carriage home on the property.</p>
-<img src="{{ url_for('static', filename='simonPelletierPhotos/carriageHome.jpeg') }}" width ="50%">
+<img src="{{ url_for('static', filename='simonPelletier/carriageHome.jpeg') }}" width ="50%">
 
-<p>Another time I purchased a home with partners in Whitehorse, Yukon. We then split it into two rental units. We gutted the house down to the studs and concrete. I re-designed and completely replaced the plumbing all the way to the street service below the foundation. New kitchens, new bathrooms and all new electrical. </p>
+<p>I purchased a home with partners in Whitehorse, Yukon. We then split it into two rental units. We gutted the house down to the studs and concrete. I re-designed and completely replaced the plumbing all the way to the street service below the foundation. New kitchens, new bathrooms and all new electrical. </p>
 
 <p>More recently I designed and built a tiny home with a former partner of mine. We used locally sourced timber for the inside and outside with a focus on using wood and metal. The home rests on an old trailer I salvaged. Its an off-grid setup with no plumbing and an Amish built wood stove cooktop and a solar system designed by me. It features large windows, white pine shiplap interior with cedar accents and rough white pine board and batten exterior painted with a traditional linseed pine tar paint. It currently sits in the corner of a field tucked against some popular trees on the Birch river. A very quiet spot. </p>
 
+<div class="grid">
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/tinyHome/exteriorFar.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/tinyHome/exteriorCloseFront.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/tinyHome/exteriorCloseSide.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/tinyHome/kitchen.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/tinyHome/diningTable.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/tinyHome/bedroom.jpeg') }}"></div>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>Computers</h3>
+
+<p>I possess a strong ability to create and make things in the digital realm.</p>
+
+<p>I have an Economics degree and three quarters of a Computer Science degree from the University of Manitoba.</p>
+
+<p>I’ve built regression models that try and tease out the relationship between carbon dioxide emissions and GDP — they aren’t necessarily correlated.</p>
+
+<p>I’ve built an AI system for path formation in graphs using the behaviour patterns present in ant colonies(<a href="/static/AntColony Pelletier_Simon.pdf">AntColony Pdf</a>) This is a sub-field within Artificial Intelligence  that focuses on adapting biological behaviour for use in digital applications.</p>
+
+<p>A group I was involved with built a collaborative video game where numerous participants could play music together in a web terminal alongside an AI system. We called it <a href="https://github.com/seemonz/synth-ia">(Synth-AI)</a></p>
+
+<p>I’m also quite capable in the design realm. I have an eye for taking photos. For manipulating them in photoshop and for structuring content to be displayed on the web. This website being an example<a href="https://github.com/seemonz/manitobaTime">(manitobaTime)</a> </p>
+
+<br>
+<br>
+<br>
+
+<h3>Creative</h3>
+
+<p>I experience emotions intensely. They often need to come out. I use the physical world to express them. Sometimes it’s via the athletic: planting, carpentry, running, climbing.  Other times it’s written word or visual arts.</p>
+
+<p>I’ve been reading and writing my entire life. Much of what I’m proud of is sort of a stream of consciousness style of writing or essay. Not very planned but more an honest expression of a feeling or a worldview that is striking me at the time. <a href="/writings">(Writings)</a>  </p>
+
+<p>I’ve written a fiction novel, but it’s terrible and will never see the light of day.</p>
+
+<p>I draw or paint every other day. <a href="/art">(Art)</a>
+
+<p>I enjoy taking <a href="/photos">(Photos)</a>.There's an interesting interaction between art and photography that I didn't really understand until I started practicing both. Learning to frame a photograph can be applied directly to figuring out how to construct an art piece.</p>
+
+
+<br>
+<br>
+<br>
+
+<h3>Physicality</h3>
+
+<p>I have a body that I like to use. I have great physical intelligence and I’m quick to pick up a skill or sport. </p>
+
+<p><b>Tree planting</b> has been a career for me. I did eight seasons of work — typically 60 - 90 days from April to August. It’s a piece work arrangement — paid per tree. I excel in a competitive environment and through most of my career I was in the top 90 percentile in terms of performance.  I love hard work.  I planted somewhere in the neighbourhood of 800,000 trees. It would have been nice to hit a million… </p>
+
+<div class="grid">
+  <div class="grid-item-full"><img src="{{ url_for('static', filename='simonPelletier/treeplanting/epicTreeplantingStaging.jpeg') }}"></div>
+  <div class="grid-item-full"><img src="{{ url_for('static', filename='simonPelletier/treeplanting/simonPosing.jpeg') }}"></div>
+</div>
+
+<iframe width="948" height="393" src="https://www.youtube.com/embed/_udZeFzyM8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+<br>
+<br>
+
+<p><b>Rock climbing.</b> I’ve spent many years pursuing rock faces. To become proficient as a rock climber requires a level of dedication that doesn’t fit well into the regular routines of a nine to five lifestyle — at least in Manitoba. It worked great with tree plantings seasonal nature though. So I would tree plant four months of the year and then climb the rest of the time. I scaled large mountains and small cliffs. I can climb 5.13, boulder V8, and my most proud Alpine objective was the BC coasts Tantalus Traverse.</p>
+
+
+<div class="grid">
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/climbing/senoraCaveClimb.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/climbing/huastecaPano.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/climbing/senoraTower.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/climbing/overhungSimon.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/climbing/shadowClimb.jpeg') }}"></div>
+  <div class="grid-item"><img src="{{ url_for('static', filename='simonPelletier/climbing/timeWaveZero.jpeg') }}"></div>
+</div>
+
+<br>
+<br>
+<br>
+
+<p><b>Running</b> I’m a fan of LONG runs. I’ve run: <i>Juan De Fuca Trail</i>, 40kms of rugged coastal trail on the southwest side of Vancouver Island. <i>Howe Sound Crest Trail</i>, 26kms and 2500m elevation is covered in the alpine from North Vancouver to Porteau Cove. <i>Mantario Trail</i> is a 60 km trail located in Whiteshell Provincial Park. The longer and harder the better! </p>
+
+<br>
+<br>
+<br>
+
+<h3>Leadership</h3>
+
+<p>I lead by example and from a place of compassion. My greatest leaders asked much of me but also gave back in an equal manner.  I follow in this tradition. </p>
+
+<p>I’ve run crews in tree planting. The crew boss drives a 350 super duty Ford flat deck. They load trees and make plans with the supervisor for the days work. They are responsible for the five planters under them. They set them up with land and monitor the quality of the trees they plant. They collect commission on the planters work and so are incentivized to teach and create skilled tree planters. This is a HARD job and I had a hard time learning how to excel in the role. My last year was a success but also the MOST TIRED I’ve ever been.</p>
+
+<p>I will respect you, I will love you and I will ask much of you.</p>
+
+<p>If I’m wrong you can tell me why and I will acknowledge my fault gracefully.</p>
+
+<p>But most of all clear and honest dialogue; communication over silence.</p>
+
+<br>
+<br>
+<br>
 
 
 {% endblock %}
